@@ -2,7 +2,7 @@ development:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: smtm_chile_dev
+  database: montana_dev
   pool: 5
   username: root
   password: 9xmyKan.11
@@ -16,13 +16,13 @@ test:
   adapter: sqlite3
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
-  database: db/smtm_chile_test
+  database: db/montana_test
 
 production:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: smtm_chile_pro
+  database: montana_pro
   pool: 5
   username: root
   password: 9xmyKan.11
