@@ -14,7 +14,5 @@ RSpec.describe 'Index Page', type: :feature do
       # print page.html
       expect(page).to have_css('meta[name="viewport"]', visible: false)
     end
-
-    xit 'should have width=device-width meta tag' do; end
   end
 end
