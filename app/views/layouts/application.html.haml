@@ -5,5 +5,10 @@
     %meta{content: metadescription, name: 'description'}/
     %meta{:content => "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no", :name => "viewport"}/
 
+    = stylesheet_link_tag 'application'
+    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+
+    = csrf_meta_tags
+
   %body
     = yield
